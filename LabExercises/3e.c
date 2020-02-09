@@ -2,26 +2,32 @@
 #include <stdlib.h>
 #define pi 3.1415
 char ch;
-float r,vol,h;
+int a,b;
+float vol,r,h;
 void sphereVolume(){
 printf("Enter radius:");
-scanf("%f",&r);
+scanf("%d",&a);
+r=(float)a;
 vol=1.333*pi*(r*r*r);// 4/3=1.333
 printf("Volume of Sphere = %.2f",vol);
 }
 void coneVolume(){
 printf("Enter radius:");
-scanf("%f",&r);
+scanf("%d",&a);
 printf("Enter height:");
-scanf("%f",&h);
+scanf("%d",&b);
+r=(float)a;
+h=(float)b;
 vol=pi*r*r*h/3;
 printf("Volume of Cone = %.2f",vol);
 }
 void cylinderVolume(){
 printf("Enter radius: ");
-scanf("%f",&r);
+scanf("%d",&a);
 printf("Enter height: ");
-scanf("%f",&h);
+scanf("%d",&b);
+r=(float)a;
+h=(float)b;
 vol=pi*r*r*h;
 printf("Volume of cylinder = %.2f",vol);
 }
