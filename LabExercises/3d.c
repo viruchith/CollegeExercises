@@ -11,5 +11,5 @@ printf("\n--a =%d",--a);
 Output:
 Enter a:10
 a-- = 10
---a =
+--a = 8
 */
