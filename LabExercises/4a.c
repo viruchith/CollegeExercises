@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 void main(){
-int m1,m2,m3,m4,m5,m6,total,avg;
+int m1,m2,m3,m4,m5,m6,total;
+float avg;
 printf("Enter m1:");
 scanf("%d",&m1);
 printf("Enter m2:");
@@ -23,9 +24,9 @@ m4>50?printf("\nm4=Pass"):printf("\nm4=Fail");
 m5>50?printf("\nm5=Pass"):printf("\nm5=Fail");
 m6>50?printf("\nm6=Pass"):printf("\nm6=Fail");
 if(m1>50&&m2>50&&m3>50&&m4>50&&m5>50&&m6>50)
-    printf("\nOverall Result = Pass");
+    printf("\nOverall Result = Pass Total = %d Average = %.2f",total,avg);
 else
-    printf("\nOverall Result = Fail");
+    printf("\nOverall Result = Fail Total = %d Average = %.2f",total,avg);
 
 }
 /*
@@ -41,5 +42,5 @@ m3=Pass
 m4=Pass
 m5=Pass
 m6=Pass
-Overall Result = Pass
+Overall Result = Pass Total = 431 Average = 71.83
 */
