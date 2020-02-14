@@ -6,19 +6,19 @@ float hra,da,sp,final;
 printf("Enter basic:");
 scanf("%d",&b);
 if(b<10000){
-da=b*(25/100);
-hra=b*(15/100);
-sp=b*(5/100);
+da=b*0.25;
+hra=b*0.15;
+sp=b*0.05;
 loan=500;
 }else if(b>=10000 && b<=50000){
-da=b*(35/100);
-hra=b*(25/100);
-sp=b*(10/100);
+da=b*0.35;
+hra=b*0.25;
+sp=b*0.1;
 loan=1000;
 }else{
-da=b*(50/00);
-hra=b*(30/100);
-sp=b*(20/100);
+da=b*0.5;
+hra=b*0.3;
+sp=b*0.2;
 loan=1500;
 }
 final=da+hra+sp+b-loan;
