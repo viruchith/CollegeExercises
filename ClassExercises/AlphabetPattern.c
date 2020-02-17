@@ -18,8 +18,11 @@ for(int i=0;i<n;i++){
 		}
 		x=b;
 	for(int l=0;l<=n-i-1;l++){
-		if(i!=0&&x!=71&&x>=65){printf("%c ",x);
-		x--;}
+		if(i!=0&&x!=71&&x>=65)
+        {
+        printf("%c ",x);
+		x--;
+		}
 		else{
 		    x--;
 		if(x>=65){
