@@ -30,3 +30,4 @@ Enter number of rows: 7
        1   5  10  10   5   1
      1   6  15  20  15   6   1
 */
+//Ref: https://www.programiz.com/c-programming/examples/pyramid-pattern
