@@ -1,3 +1,4 @@
+//to print Armstrong numbers in range 100 to 1000
 #include <stdio.h>
 int n,t,i,sum;
 void main(){
