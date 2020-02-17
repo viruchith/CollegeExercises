@@ -1,3 +1,4 @@
+//To check whether two numbers are palindrome or not
 #include "stdio.h"
 void main()
 {
