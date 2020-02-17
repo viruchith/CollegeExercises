@@ -1,3 +1,4 @@
+//To check whether a number is Armstrong number or not.
 #include <stdio.h>
 int n,t,i,sum;
 void main(){
