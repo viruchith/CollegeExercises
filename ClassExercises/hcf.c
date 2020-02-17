@@ -1,3 +1,4 @@
+//To find HCF or GCD of two numbers.
 #include <stdio.h>
 void main()
 {
