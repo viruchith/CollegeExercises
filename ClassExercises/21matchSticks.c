@@ -17,7 +17,7 @@ while(sum<=21){
         sum+=c;
         printf("\nSum: %d",sum);
         if(sum==21){
-            printf("\nComputer is Won!!!");
+            printf("\nComputer Won the game!!!");
             break;
         }
 
@@ -47,5 +47,5 @@ Enter a num: 4
 Sum: 19
 computer 2
 Sum: 21
-Computer is Won!!!
+Computer Won the game!!!
 */
