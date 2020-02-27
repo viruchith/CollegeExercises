@@ -2,7 +2,7 @@
 void main(){
 int sum=0,c,u;
 printf("Sum: %d",sum);
-while(sum<=21){
+while(1){
     printf("\nEnter a num: ");
     scanf("%d",&u);
     sum+=u;
