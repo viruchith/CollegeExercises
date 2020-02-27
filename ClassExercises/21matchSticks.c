@@ -1,3 +1,10 @@
+/*
+#In this Puzzle there are 21 Match Sticks.
+#You and Computer will pick up the sticks one by one.
+#Sticks can be picked from 1 to 4.
+#The who, picked up the last stick, is the winner. 
+*/
+
 #include <stdio.h>
 void main(){
 int sum=0,c,u;
