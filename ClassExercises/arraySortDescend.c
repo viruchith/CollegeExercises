@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 void main(){
 int *arr,t=0,n;
 printf("Enter no of items : ");
