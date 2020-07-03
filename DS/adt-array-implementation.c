@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define M 10
+#define M 10 //Max size of array
 char opt='6';
 int arr[M]={0};
 int n=0,t=0;
