@@ -110,11 +110,12 @@ n++;//increase size for insertion
     for(int i=n;i>=pos;i--){
         arr[i]=arr[i-1];
     }
-
+}else if(pos == (n+1)){
+        n++;
+    }
 printf("\nEnter element to be inserted : ");
 scanf("%d",&arr[pos-1]);
 display();
-}
 }
 /*
 Output :
