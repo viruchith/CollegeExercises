@@ -27,7 +27,7 @@ void push(int data ){
         printf("Stack overflow !\n");
         return;
     }
-    top+=1;
+    top++ ;
     arr[top] = data ;
     
 }
@@ -37,7 +37,7 @@ void pop(){
         printf("Stack underflow !\n");
         return;
     }
-    top-=1 ;
+    top-- ;
 }
 
 void peek(){
