@@ -50,6 +50,11 @@ void display(){
     printf("\n");
 }
 
+void peek(){ // print first item
+    printf(" %d \n",arr[front]);
+}
+
+
 void main(){
     enqueue(1);
     enqueue(2);
