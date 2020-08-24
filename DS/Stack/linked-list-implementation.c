@@ -35,6 +35,10 @@ void pop(){ // aka deletion at the beginning
 }
 
 void peek(){
+    if(isEmpty()){
+        printf("Stack underflow !\n");
+        return;
+    }
     printf(" %d \n",top->data);
 }
 
