@@ -24,7 +24,7 @@ void push(int data){ // aka insert at the beginning
     top = temp;
 }
 
-void pop(){
+void pop(){ // aka deletion at the beginning
     if(isEmpty()){
         printf("Stack underflow !\n");
         return;
