@@ -51,6 +51,10 @@ void display(){
 }
 
 void peek(){ // print first item
+    if(isEmpty()){
+        printf("Queue underflow !");
+        return;
+    }
     printf(" %d \n",arr[front]);
 }
 
