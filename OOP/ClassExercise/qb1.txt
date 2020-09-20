@@ -1,0 +1,28 @@
+1.	Difference between multithreading and multiprocessing
+2.	Define multithreading
+3.	Question on Exceptions
+4.	Lifecycle of threads
+5.	Differentiate between static binding and dynamic linking
+6.	Differentiate between method overloading and method overriding.
+7.	What happens when we use final keyword in class, method and variable
+8.	Explain the two possible ways to achieve threading with neat example
+9.	Explain polymorphism in java with neat example
+10.	Consider a scenario to write a Java program where Bank is a class that provides a method to get the rate of interest. 
+    However, the rate of interest may differ according to banks. 
+    For example, SBI, ICICI, and AXIS banks are providing 5.2%, 4.3%, and 10.7% rate of interest.
+11.	Consider a scenario to achieve dynamic binding where Security is a class that provides a method response(). 
+    However, the response may vary from according to the owner, employees, and clients. 
+12.	Explain the concept of overriding with examples. Write a program to create a class named shape. 
+    In this class we have three sub classes circle, triangle and square each class has two member function named draw () and erase (). 
+    Create these using polymorphism concepts.
+13.	Explain how to create threads. Write a java program that prints numbers from 1 to 10 line by line after every 5 seconds. 
+14.	Write a complex program to illustrate about thread priorities. 
+    Imagine that the first thread has just begun to run, even before it has a chance to do anything. 
+     Now the higher priority thread that wants to run as well. Now the higher priority thread has to do its work before the first thread starts.
+15.	Explain life cycle of a thread with help of a diagram. How do the wait and notify all/ notify methods enable cooperation between threads?
+16.	Write a program to explain the multithreading with the use of multiplication tables. 
+    Three threads must be defined. Each one must create one multiplication table; they are 5th table, 7th table and 10th table.
+17.	Write a complex program to illustrate about thread priorities. Imagine that the first thread has just begun to run, even before it has a chance to do anything. 
+    Now the higher priority thread that wants to run as well. Now the higher priority thread has to do its work before the first thread starts.
+18.	Consider a scenario where Bank is a class that provides a method to get the rate of interest. However, the rate of interest may differ according to banks. 
+    For example, SBI, ICICI, and AXIS banks are providing 8.4%, 7.3%, and 9.7% rate of interest
