@@ -41,7 +41,7 @@ class TenthTable extends Table{
     }
 }
 
-public class Main
+public class ThreadTable
 {
 	public static void main(String[] args) {
 	   
