@@ -4,22 +4,31 @@ However, the rate of interest may differ according to banks.
 For example, SBI, ICICI, and AXIS banks are providing 5.2%, 4.3%, and 10.7% rate of interest.
 */
 class Bank{
-    protected double r = 0;
-    protected void setRate(double r){
-        this.r = r;
-    }
-    protected double getInterest(double p,int n){
-        return ((p*n*this.r)/100) ;
+    
+    protected void getInterest(){
+        System.out.println("Interest");
     }
 }
 
 class SBI extends Bank{
+    protected void getInterest(){
+    System.out.println("SBI : 5.2%");    
+    }
 }
 
 class ICICI extends Bank{
+    protected void getInterest(){
+    System.out.println("ICICI : 4.2%");    
+    }
 }
 
 class AXIS extends Bank{
+    
+    protected void getInterest(){
+    
+    System.out.println("AXIS : 10.7%");    
+       
+    }
 
     
 }
@@ -31,19 +40,17 @@ public class Main
 	    ICICI ic = new ICICI();
 	    AXIS ax = new AXIS();
 	    
-	    sb.setRate(5.2);
-	    System.out.println("SBI : Rs."+sb.getInterest(10000,12));
-	    ic.setRate(4.3);
-	    System.out.println("ICICI : Rs."+ic.getInterest(10000,12));
-	    ax.setRate(10.7);
-	    System.out.println("Axis : Rs."+ax.getInterest(10000,12));
+	    sb.getInterest();
+	    ic.getInterest();
+	    ax.getInterest();
+	    
 	}
 }
 
 /*Output : 
 
-SBI : Rs.6240.0                                                                                                         
-ICICI : Rs.5160.0                                                                                                       
-Axis : Rs.12840.0 
+SBI : 5.2%                                                                                                              
+ICICI : 4.2%                                                                                                            
+AXIS : 10.7%
 
 */
