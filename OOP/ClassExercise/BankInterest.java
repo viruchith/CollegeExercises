@@ -33,7 +33,7 @@ class AXIS extends Bank{
     
 }
 
-public class Main
+public class BankInterest
 {
 	public static void main(String[] args) {
 	    SBI sb = new SBI();
