@@ -1,3 +1,93 @@
+/*
+Design and write a class to represent a bank account that includes the following members: 
+
+    Data members 
+        Owner name 
+        Account number 
+        Balance amount in the account 
+    Methods members 
+        To assign initial values 
+        To deposit an amount 
+        To withdraw an amount after checking balance 
+        To display the owner name and balance
+    incorporate a constructor to provide initial values.
+    Write a main method for the above class that reads in the initial values from the keyboard.
+
+public static void main(String[] args){
+
+        BufferedReader obj = new BufferedReader(new InputStreamReader(System.in));
+
+                 
+
+        System.out.print("Please Enter an Account Number: ");
+
+        int num = Integer.parseInt(obj.readLine());
+
+       
+
+        System.out.print("Please Enter the Account Holder Name: ");
+
+        String name = obj.readLine();
+
+        
+
+        System.out.print("Please Enter the Balance: ");
+
+        double blns = Double.parseDouble(obj.readLine());
+
+        
+
+        BankAccount acc = new BankAccount(name, num, blns);
+
+        acc.display();
+
+        acc.deposit(blns);
+
+        acc.display();
+
+        
+
+        acc.withdraw(2*blns);
+
+        acc.display();
+
+        
+
+        acc.withdraw(blns);
+
+        acc.display();
+
+    }
+
+
+Sample Output:
+
+Please Enter an Account Number: 1001                                  
+
+Please Enter the Account Holder Name: Dhaya                          
+
+Please Enter the Balance: 120000                                      
+
+Account Holder Name: Dhaya                                            
+
+Account Balance: 120000.0                                             
+
+Account Holder Name: Dhaya                                            
+
+Account Balance: 240000.0                                             
+
+Error: Insufficient fund or Invalid amount!                           
+
+Account Holder Name: Dhaya                                            
+
+Account Balance: 240000.0                                             
+
+Account Holder Name: Dhaya                                            
+
+Account Balance: 120000.0 
+*/
+
+
 import java.io.*;
 
 class BankAccount{
