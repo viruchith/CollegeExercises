@@ -112,15 +112,15 @@ class BankAccount{
     
     protected void withdraw(double amount){
         if(amount > balance || amount<0 ){
-            System.out.println("Insufficient balance");
+            System.out.println("Error: Insufficient fund or Invalid amount!");
         }else{
             this.balance -= amount ;
         }
     }
     
     protected void display(){
-        System.out.println("Account Holder : "+this.name);
-        System.out.println("Account Balance : "+this.balance) ;
+        System.out.println("Account Holder Name: "+this.name);
+        System.out.println("Account Balance: "+this.balance) ;
         
     }
     
@@ -131,13 +131,13 @@ class Bank{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         try{
             
-            System.out.println("Please Enter an Account Number : ");
+           // System.out.println("Please Enter an Account Number :");
             int num = Integer.parseInt(br.readLine());
             
-            System.out.println("Please Enter Account Holder Name : ");
+            //System.out.println("Please Enter Account Holder Name :");
             String name = br.readLine();
             
-            System.out.println("Please Enter Account Balance : ");
+            //System.out.println("Please Enter Account Balance :");
             double balance = Double.parseDouble(br.readLine());
             
             BankAccount acc = new BankAccount(name,num,balance);
@@ -146,7 +146,7 @@ class Bank{
             acc.deposit(balance);
             acc.display();
             
-            acc.withdraw(2*balance+1.0); 
+            acc.withdraw(2*balance+1); 
             /*
             if not the balance will be sufficient
             for withdrawl
