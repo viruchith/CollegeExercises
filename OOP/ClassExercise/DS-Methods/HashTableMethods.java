@@ -38,3 +38,23 @@ public class HashTableMethods
 		
 	}
 }
+
+/*
+Output :
+
+contains 'Two'  : true
+contains Key '3'  : true
+contains Value 'four'  : true
+HashCode : 85336635
+Is Empty ? : false
+Size : 5
+Keys : [5, 4, 3, 2, 1]
+Values : [Five, Four, Three, Two, One]
+Contains 5 ? : false
+Remove 5 : Five
+After removing 5 : {4=Four, 3=Three, 2=Two, 1=One}
+
+
+
+
+*/
