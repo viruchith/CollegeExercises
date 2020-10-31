@@ -1,3 +1,11 @@
+/*
+Write a Java program to display a series of student ID numbers and ask the user to enter a test letter grade for the student. 
+Create an Exception class named GradeException that contains a static public array of valid letter grades(‘A’, ‘B’, ‘C’, ‘D’,'E', ‘F’ and ‘I’), 
+which you can use to determine whether a grade entered from the application is valid. Create a method named validGrade() which throws a 
+GradeException if the user does not enter a valid letter grade. Catch the GradeException, and display the appropriate message.  
+If the user enters a valid grade then the corresponding student id and grade are updated in the Hashtable. At the end of the application, 
+display all the student IDs and grades which are available in the Hashtable.
+*/
 import java.io.*;
 import java.util.*;
 
