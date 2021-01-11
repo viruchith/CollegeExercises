@@ -61,7 +61,7 @@ Sample Output
 */
 import java.util.*;
 
-// Infix evaluation program copied from GeeksForGeeks
+// Infix evaluation program strictly copied from GeeksForGeeks.org
 class EvaluateString
 {
     public static int evaluate(String expression)
