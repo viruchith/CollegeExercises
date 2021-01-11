@@ -1,3 +1,64 @@
+/*
+
+A student called Aron is very naughty in school. He is always bored in class, and he is always making a chaos. The faculty wanted to cool him down and “gentle” him, so he has given him a complex mathematical problem.
+
+The faculty gives Aron an arithmetic expression A, the integer P and M. Aron has to answer the following question: “What is the minimum non-negative value of variable x in expression A so that the remainder of dividing A with M is equal to P?”. The solution will always exist.
+
+Additionally, it will hold that, if we apply the rules of distribution on expression A, variable x will not multiply variable x 
+
+(formally, the expression is a polynomial of the first degree in variable x).
+
+Interpretations of valid expressions: 5+x⋅(3+2), x+3⋅x+4⋅(5+3⋅(2+x−2⋅x)).
+
+Interpretations of invalid expressions: 5⋅(3+x⋅(3+x)), x⋅(x+x⋅(1+x)).
+
+Input Format
+
+The first line of input contains the expression A. The second line of input contains two integers P and M. The arithmetic expression A will only consists of characters +, -, *, (, ), x and digits from 0 to 9. The brackets will always be paired, the operators +, - and * will always be applied to exactly two values (there will not be an expression (−5) or (4+−5)) and all multiplications will be explicit (there will not be an expression 4(5) or 2(x)).
+
+Output Format
+
+Display the minimal non-negative value of variable x.
+
+Constraints
+
+•   1<=|A|<=105
+
+•   0<=P<=M−1
+
+•   1<=M<=106
+
+Sample Input
+
+5+3+x
+
+Sample Output
+
+9 10
+
+1
+
+Sample Input
+
+20+3+x
+
+Sample Output
+
+0 5
+
+2
+
+Sample Input
+
+3*(x+(x+4)*5)
+
+Sample Output
+
+1 7
+
+1
+
+*/
 import java.util.*;
 
 // Infix evaluation program copied from GeeksForGeeks
