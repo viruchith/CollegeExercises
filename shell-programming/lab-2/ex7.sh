@@ -9,7 +9,7 @@ if (( HOUR >= 5 && HOUR < 12 ))
 then
 	echo "Good Morning, $USERNAME."
 
-elif (( HOUR <= 12 && HOUR < 17 ))
+elif (( HOUR >= 12 && HOUR < 17 ))
 #12:00 PM — 4:59 PM
 then 
 	echo "Good Afternoon, $USERNAME."
