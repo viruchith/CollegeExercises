@@ -1,3 +1,5 @@
+echo "Enter Path : "
+
 read P
 
 if [ -d "$P" ]#check if the path is a valid directory
