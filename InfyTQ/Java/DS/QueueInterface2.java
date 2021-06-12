@@ -1,3 +1,11 @@
+/*
+Implement a program to update a given input stack such that all occurrences of the 
+smallest value are at the bottom of the stack while the order of the 
+other elements remain the same. Implement the logic inside 
+changeSmallest() method.
+Test the functionalities using the main() method of the Tester class.
+Sample Input and Output
+*/
 import java.util.Deque;
 import java.util.ArrayDeque;
 
