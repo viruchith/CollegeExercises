@@ -9,6 +9,7 @@ class BiClient {
 
     String str = "", str2 = "";
     while (!str.equals("stop")) {
+      System.out.print("Enter : ");
       str = br.readLine();
       dout.writeUTF(str);
       dout.flush();
