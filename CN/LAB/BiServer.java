@@ -11,7 +11,7 @@ class BiServer {
     String str = "", str2 = "";
     while (!str.equals("stop")) {
       str = din.readUTF();
-      System.out.println("client says: " + str);
+      System.out.println("client : " + str);
       System.out.print("Enter : ");
       str2 = br.readLine();
       dout.writeUTF(str2);
