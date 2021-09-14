@@ -136,7 +136,7 @@ class DoublyLinkedList{
         if(nodeAfter == null){
             System.out.println("dataAfter does not exist !");
         }else{
-            if(nodeAfter.equals(head)){
+            if(nodeAfter.equals(this.head)){
                 insertAtTheBeginning(data);
             }else{
                 Node node = new Node(data);
@@ -155,12 +155,46 @@ class DoublyLinkedList{
                 this.head = this.tail = null;
             }else{
                 Node nodeAfter = this.head.getNext();
+                nodeAfter.setPrev(null);
                 this.head = nodeAfter;
             }
             this.size--;
         }
     }
     
+    public void deleteLast(){
+        if(this.isEmpty()){
+            System.out.println("List is Empty !");
+        }else{
+            if(this.size == 1){
+                this.head = this.tail = null;
+            }else{
+                Node nodeBefore = this.tail.getPrev();
+                nodeBefore.setNext(null);
+                this.tail = nodeBefore;
+            }
+            this.size--;
+        }
+    }
+    
+    public void delete(String data){
+        Node node = this.find(data);
+        if(node==null){
+            System.out.println("Node does not exist !");
+        }else{
+            if(node.equals(this.head)){
+                this.deleteFirst();
+            }else if(node.equals(this.tail)){
+                this.deleteLast();
+            }else{
+                Node nodeBefore = node.getPrev() , nodeAfter = node.getNext();
+                nodeBefore.setNext(nodeAfter);
+                nodeAfter.setPrev(nodeBefore);
+                node = null;
+            }
+            this.size--;
+        }
+    }
     
     
 }
@@ -174,6 +208,10 @@ public class Main{
         dll.insertAtTheEnd("Yellow");
         dll.insertAfter("Yellow","Black");
         dll.insertBefore("Red","Maroon");
+        dll.deleteLast();
+        dll.deleteFirst();
+        dll.delete("Green");
         dll.displayForward();
+        dll.displayBackward();
     }
 }
