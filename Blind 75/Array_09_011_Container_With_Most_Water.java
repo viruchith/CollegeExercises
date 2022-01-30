@@ -13,3 +13,27 @@ class Solution {
         return maxArea;
     }
 }
+
+
+
+
+//O(n) Accepted
+class Solution {
+    public int maxArea(int[] height) {
+        int maxArea = Integer.MIN_VALUE;
+        int l = 0 , r = height.length-1;
+        while(l<r){
+            int area = ((height[l]<height[r])?height[l]:height[r]) * (r-l);
+            if(area>maxArea){
+                maxArea=area;
+            }
+            
+            if(height[l]<height[r]){
+                l++;
+            }else{
+                r--;
+            }
+        }
+        return maxArea;
+    }
+}
