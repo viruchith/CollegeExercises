@@ -1,5 +1,11 @@
 class Solution {
     public boolean isAnagram(String s, String t) {
+        
+        if(s.length()!=t.length()){
+            return false;
+        }
+
+        
         Map<String,Integer> map1 = new HashMap<String,Integer>();
         Map<String,Integer> map2 = new HashMap<String,Integer>();
 
@@ -26,6 +32,12 @@ class Solution {
 
 class Solution {
     public boolean isAnagram(String s, String t) {
+        
+        if(s.length()!=t.length()){
+            return false;
+        }
+        
+        
         List<String> list1  = Arrays.asList(s.split(""));
         List<String> list2  = Arrays.asList(t.split(""));
 
