@@ -173,5 +173,38 @@ public class Main
 }
 
 -------------------------------------------------------------------------------------------------------------
-	
+// 5) How to check if a String contains only digits?
+
+
+import java.util.*;
+import java.util.regex.*;
+
+public class Main
+{
+    
+    public static boolean isANumberUsingRegex(String s){
+        Pattern pattern = Pattern.compile("\\d*");
+        return pattern.matcher(s).matches();
+    }
+    
+    public static boolean isAlphaUsingRegex(String s){
+        Pattern pattern = Pattern.compile("[a-zA-Z]+");
+        return pattern.matcher(s).matches();
+    }
+   
+	public static void main(String[] args) {
+		String s1 = "123" , s2 = "abc123" , s3 =  "helloworld";
+		
+		System.out.println(isANumberUsingRegex(s1));
+		System.out.println(isAlphaUsingRegex(s3));
+		/*
+		*Character.isDigit(ch c)
+		*Character.isLetterOrDigit(ch c)
+		*Character.isLetter(ch c)
+		*/
+		
+	}
+}
+
+-------------------------------------------------------------------------------------------------------
 	
