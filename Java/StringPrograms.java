@@ -135,7 +135,43 @@ public class Main
 }
 
 -----------------------------------------------------------------------------------------------------------------------
+// 4) How to Reverse String in Java Using Iteration and Recursion
 
 
+	
+import java.util.*;
+
+public class Main
+{
+    
+    public static String reverseUsingCharArray(String word){
+        char[] letters = word.toCharArray();
+        int l = 0 , r = letters.length - 1 ;
+        
+        while(l<r){
+            char temp = letters[l];
+            letters[l] = letters[r];
+            letters[r] = temp;
+            l++;r--;
+        }
+        
+        return new String(letters);
+    }
+    
+    public static String reverseUsingRecursion(String word){
+        if(word.equals("")){
+            return "";
+        }
+        return word.substring(word.length()-1) + reverseUsingRecursion(word.substring(0,word.length()-1));
+    }
+   
+	public static void main(String[] args) {
+		String word = "hello";
+		System.out.println(reverseUsingCharArray(word)); // olleh
+		System.out.println(reverseUsingRecursion(word)); // olleh
+	}
+}
+
+-------------------------------------------------------------------------------------------------------------
 	
 	
