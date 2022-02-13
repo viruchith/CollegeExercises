@@ -99,8 +99,43 @@ public class Main
 }
 
 ---------------------------------------------------------------------------------------------------------------------
+// 3) How to program to print first non repeated character from String?
 
-	
-	
+
+import java.util.*;
+
+public class Main
+{
+    
+    public static Character firstNonRepeatingCharacter(String word){
+        HashMap<Character,Integer> map = new HashMap<>();
+        
+        for(Character letter : word.toCharArray()){
+            if(map.containsKey(letter)){
+                map.put(letter,map.get(letter)+1);
+            }else{
+                map.put(letter,1);
+            }
+        }
+        
+        for(Character letter : word.toCharArray()){
+            if(map.get(letter)==1){
+                return letter;
+            }
+        }
+        
+        return null;
+        
+    }
+    
+	public static void main(String[] args) {
+		String word = "helleohworld";
+		System.out.println(firstNonRepeatingCharacter(word)); // w
+	}
+}
+
+-----------------------------------------------------------------------------------------------------------------------
+
+
 	
 	
