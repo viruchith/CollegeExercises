@@ -207,4 +207,42 @@ public class Main
 }
 
 -------------------------------------------------------------------------------------------------------
+// 7) How to count a number of vowels and consonants in a String?
+
+
 	
+import java.util.*;
+
+public class Main
+{
+    public static int countVowels(String word){
+        int vowelCount = 0;
+        
+        for(Character c : word.toCharArray()){
+            switch(c){
+                case 'a':
+                case 'A':
+                case 'e':
+                case 'E':
+                case 'i':
+                case 'I':
+                case 'o':
+                case 'O':
+                case 'u':
+                case 'U':
+                    vowelCount++;
+                    break;
+                default:
+                break;
+            }
+        }
+        
+        return vowelCount;
+    }
+    
+	public static void main(String[] args) {
+		String  s =  "hellOworld";
+		System.out.println("vowels : "+countVowels(s)+" "+"consonants : "+s.length()-countVowels(s));
+	}
+}
+-----------------------------------------------------------------------------------------------------------
