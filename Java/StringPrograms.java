@@ -279,3 +279,27 @@ public class Main
 }
 //-------------------------------------------------------------------------------------------
 
+//9) How to convert numeric String to an int?
+
+import java.util.*;
+
+public class Main
+{
+    public static int strToInt(String s){
+        int result = 0;
+        for(char c : s.toCharArray()){
+            result = (result * 10) + (c - '0');
+        }
+        
+        return result;
+    }
+    
+	public static void main(String[] args) {
+	    String s1 = "123" , s2 = "a123" ;
+	    System.out.println(strToInt(s1));
+	    System.out.println(strToInt(s2));
+	}
+}
+
+
+//-----------------------------------------------------------------------------------------------------------------------
