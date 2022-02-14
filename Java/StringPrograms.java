@@ -303,3 +303,41 @@ public class Main
 
 
 //-----------------------------------------------------------------------------------------------------------------------
+
+// 10) How to replace each given character to other e.g. blank with %20? (solution)
+
+
+
+import java.util.*;
+
+public class Main
+{
+    public static String replaceWith(String str,Character replace,String replacement){
+        if(str==null || replace==null || replacement==null ){
+            return null;
+        }
+        
+        StringBuilder replaced = new StringBuilder();
+        
+        for(int i = 0 ; i < str.length() ; i++ ){ // also to charArray()
+            char c = str.charAt(i);
+            if(c==replace){
+                replaced.append(replacement);
+            }else{
+                replaced.append(c);
+            }
+        }
+        
+        return replaced.toString();
+    }
+    
+	public static void main(String[] args) {
+	    String s1 = "hello world" , s2 = "Java-is-awesome";
+	    System.out.println(replaceWith(s1,' ',"%20"));
+	    System.out.println(replaceWith(s2,'-'," "));
+	}
+}
+
+
+//---------------------------------------------------------------------------------------------------------------------
+
