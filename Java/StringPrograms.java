@@ -365,4 +365,29 @@ public class Main
 
 // ----------------------------------------------------------------------------------------------------------------
 
+// 13) How to check if String is Palindrome?
 
+
+
+public class Main
+{
+    public static boolean isAPalindrome(String str){
+        return str.equals(reverseString(str));
+    }
+    
+    public static String reverseString(String str){
+        if(str==null) return null;
+        if(str.equals("")) return "";
+        
+        return str.substring(str.length()-1,str.length()) + reverseString(str.substring(0,str.length()-1));
+    }
+    
+	public static void main(String[] args) {
+	    String s1 ="Java is Great", s2="malayalam" ;
+		System.out.println(isAPalindrome(s1));
+		System.out.println(isAPalindrome(s2));
+
+	}
+}
+
+// -------------------------------------------------------------------------------------------------------------------
