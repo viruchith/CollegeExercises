@@ -341,3 +341,28 @@ public class Main
 
 //---------------------------------------------------------------------------------------------------------------------
 
+// 12) How to reverse words in a sentence without using a library method?
+
+
+
+public class Main
+{
+    public static String reverseStringUsingArray(String str){
+        StringBuilder sb = new StringBuilder();
+        String[] words = str.split("\\s");
+        for(int i = words.length-1; i>=0 ; i--){
+            sb.append(words[i]).append(" ");
+        }
+        return sb.toString().trim();
+    }
+    
+	public static void main(String[] args) {
+	    String s ="Java is Great";
+		System.out.println(reverseStringUsingArray(s));
+	}
+}
+
+
+// ----------------------------------------------------------------------------------------------------------------
+
+
