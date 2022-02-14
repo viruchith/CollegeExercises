@@ -391,3 +391,33 @@ public class Main
 }
 
 // -------------------------------------------------------------------------------------------------------------------
+
+// 14) How to remove duplicate characters from String?
+
+import java.util.*;
+
+public class Main
+{
+    public static String removeDuplicateCharacters(String str){
+        // must keep first occurence
+        HashSet<Character> set = new HashSet<Character>();
+        
+        StringBuilder sb = new StringBuilder();
+        
+        for(Character c : str.toCharArray()){
+            if(!set.contains(c)){
+                sb.append(c);
+            }
+            set.add(c);
+        }
+        
+        return sb.toString();
+        
+    }
+    
+	public static void main(String[] args) {
+	    String s1 ="bananas", s2="malayalam" ;
+        System.out.println(removeDuplicateCharacters(s1));
+        System.out.println(removeDuplicateCharacters(s2));
+	}
+}
