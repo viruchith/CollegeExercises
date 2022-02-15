@@ -421,3 +421,54 @@ public class Main
         System.out.println(removeDuplicateCharacters(s2));
 	}
 }
+//-------------------------------------------------------------------------------------------------------------------
+
+// How to find all permutations of String?
+
+import java.util.*;
+
+public class Main{
+    
+    public static List<String> getPermutations(String str){
+        List<String> permutations = new ArrayList<>();
+        generatePermutations(permutations,str.length(),str.toCharArray());
+        return permutations;
+    }
+    
+    public static void generatePermutations(List<String> permutations,int n,char[] arr){
+        if(n==1){
+            permutations.add(new String(arr));
+            return;
+        }
+        
+        generatePermutations(permutations,n-1,arr);
+        
+        boolean isEven = (n%2==0)?true:false;
+        
+        if(isEven){
+            for (int i = 0;i<n-1 ;i++ ){
+                swapInPlace(arr,0,n-1);
+                generatePermutations(permutations,n-1,arr);
+            } 
+        }else{
+            for (int i = 0;i<n-1 ;i++ ){
+                swapInPlace(arr,i,n-1);
+                generatePermutations(permutations,n-1,arr);
+            }   
+        }
+    }
+    
+    public static void swapInPlace(char[] arr,int index1,int index2){
+        char temp = arr[index1];
+        arr[index1] = arr[index2];
+        arr[index2] = temp;
+    }
+    
+    public static void main(String[] args){
+        System.out.println(getPermutations("abc"));
+    }
+
+}
+
+
+//-------------------------------------------------------------------------------------------------------------------
