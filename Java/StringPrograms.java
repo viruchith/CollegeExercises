@@ -447,12 +447,12 @@ public class Main{
         
         if(isEven){
             for (int i = 0;i<n-1 ;i++ ){
-                swapInPlace(arr,0,n-1);
+                swapInPlace(arr,i,n-1);
                 generatePermutations(permutations,n-1,arr);
             } 
         }else{
             for (int i = 0;i<n-1 ;i++ ){
-                swapInPlace(arr,i,n-1);
+                swapInPlace(arr,0,n-1);
                 generatePermutations(permutations,n-1,arr);
             }   
         }
@@ -469,6 +469,5 @@ public class Main{
     }
 
 }
-
 
 //-------------------------------------------------------------------------------------------------------------------
