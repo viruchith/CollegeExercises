@@ -514,3 +514,26 @@ public class Main
 
 //----------------------------------------------------------------------------------------------------------------------
 
+//Write a program to remove a given character from String?
+
+public class Main
+{
+    public static String removeCharacter(String str,char ch){
+        StringBuilder sb = new StringBuilder();
+        
+        for(char c : str.toCharArray()){
+            if(c != ch){
+                sb.append(c);
+            }
+        }
+        
+        return sb.toString();
+    }
+    
+    
+	public static void main(String[] args) {
+		System.out.println(removeCharacter("hello world",'l'));
+	}
+}
+
+//---------------------------------------------------------------------------------------------------------------
