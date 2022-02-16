@@ -471,3 +471,46 @@ public class Main{
 }
 
 //-------------------------------------------------------------------------------------------------------------------
+// How to return the highest occurred character in a String?
+
+
+import java.util.*;
+
+public class Main
+{
+    public static Character highestOccuredCharacter(String str){
+        if(str==null){
+            return null;
+        }
+        
+        HashMap<Character,Integer> map = new HashMap<>(); 
+        
+        char maxChar = ' ';
+        
+        int maxCount = 0;
+        
+        for(char c : str.toCharArray()){
+            if(map.containsKey(c)){
+                map.put(c,map.get(c)+1);
+            }else{
+                map.put(c,1);
+            }
+            
+            int count = map.get(c);
+            
+            if(count>maxCount){
+                maxCount = count;
+                maxChar = c;
+            }
+        }
+        
+        return maxChar;
+    }
+    
+	public static void main(String[] args) {
+		System.out.println(highestOccuredCharacter("aabbcccdddd"));
+	}
+}
+
+//----------------------------------------------------------------------------------------------------------------------
+
