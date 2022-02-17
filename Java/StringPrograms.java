@@ -537,3 +537,43 @@ public class Main
 }
 
 //---------------------------------------------------------------------------------------------------------------
+
+//Write a program to check if a String contains another String like indexOf () ?
+
+public class Main{
+    public static int indexOf(String str,String pattern){
+        if(str.length()<pattern.length()){
+            return -1;
+        }
+        
+        char[] strArr = str.toCharArray() , patternArr = pattern.toCharArray();
+        
+        int  l = 0 ,r = 0;
+        
+        while(l<strArr.length){
+            if(strArr[l]==patternArr[r]){
+                if(r==patternArr.length-1){
+                    return l-r;
+                }else{
+                    l++;
+                    r++;
+                }
+            }else{
+                if(r==0){
+                    l++;
+                }else{
+                    r=0;
+                }
+            }
+        }
+        
+        return -1;
+        
+    }
+    
+    public static void main (String[] args) {
+        System.out.println(indexOf("helhellhellohelloh","hello"));
+        System.out.println(indexOf("abababxabc","abc")+" "+("abababxabc").length());
+    }
+}
+//--------------------------------------------------------------------------------------------------------------
