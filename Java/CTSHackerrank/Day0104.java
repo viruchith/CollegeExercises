@@ -91,3 +91,20 @@ public class Solution {
 }
 
 //-------------------------------------------------------------------------------------------------------------------------
+
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        sc.nextLine();
+        String seq = String.join( "" , sc.nextLine().split("\\s") );
+        sc.nextLine();
+        String favSeq = String.join( "" , sc.nextLine().split("\\s") );    
+    
+        System.out.println((seq.contains(favSeq))?"Yes":"No");
+    }
+}
