@@ -562,6 +562,7 @@ public class Main{
                 if(r==0){
                     l++;
                 }else{
+		    l -= (r-1);
                     r=0;
                 }
             }
