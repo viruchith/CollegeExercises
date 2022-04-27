@@ -189,3 +189,36 @@ public class Main
 	}
 }
 
+
+/*
+Input - We ate Apple
+output - eW eta elppA
+
+don't use split function
+
+*/
+
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+        
+        String str = "We ate Apple";
+        
+        char[] arr = str.toCharArray();
+        
+        StringBuilder sb = new StringBuilder();
+        
+        for(char c : arr){
+            if(c==' '){
+                System.out.print(sb.toString()+' ');
+                sb = new StringBuilder();
+            }else{
+                sb.insert(0,c);
+            } 
+        }
+        System.out.print(sb.toString());
+	}
+}
+
