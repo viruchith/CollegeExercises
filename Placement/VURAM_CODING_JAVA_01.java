@@ -106,3 +106,33 @@ public class Main
 	}
 }
 
+
+// To find the duplicates elements in an array
+
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+        
+        Map<Integer,Integer> map = new  HashMap<>();
+        
+        int[] arr = {1,2,2,3,4,4,5,5,4,8,4,7,7,9,0,11,5};
+        
+        for(int i = 0 ; i<arr.length ; i++){
+            if(map.containsKey(arr[i])){
+                map.put(arr[i],map.get(arr[i])+1);
+            }else{
+                map.put(arr[i],1);
+            }
+        }
+        
+        for(int key : map.keySet()){
+            if(map.get(key)>1){
+                System.out.println(key+" repeats : "+map.get(key)+" times");
+            }
+        }
+        
+	}
+}
+
