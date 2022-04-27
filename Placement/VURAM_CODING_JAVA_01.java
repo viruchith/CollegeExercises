@@ -136,3 +136,26 @@ public class Main
 	}
 }
 
+// For a given array even array add each pairs and print the pairs if equal to a input number
+
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+        
+       int[] arr = {1,2,3,4,5,6,7,8,9,10};
+       
+       int target = 16;
+       
+       for(int i = 0 ; i<arr.length-1; i++){
+           for(int j = i + 1 ; j<arr.length ; j++ ){
+               if(arr[i]+arr[j]==target){
+                   System.out.println("Pairs : ["+arr[i]+","+arr[j]+"]");
+                   return;
+               }
+           }
+       }
+        
+	}
+}
