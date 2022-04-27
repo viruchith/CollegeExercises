@@ -80,3 +80,29 @@ public class Main
 	    
 	}
 }
+
+
+// In an unordered array with duplicates find the second maximum element
+public class Main
+{
+	public static void main(String[] args) {
+        
+        int[] arr = {5,3,8,1,4,8,3,9,0,2,4};
+        
+        int max = Integer.MIN_VALUE;
+        
+        int secmax = max;
+        
+        for(int i  = 0 ; i<arr.length ; i++ ){
+            if(arr[i]>max){
+                secmax = max;
+                max = arr[i];
+            }
+        }
+        
+        System.out.println(secmax);
+        
+        
+	}
+}
+
