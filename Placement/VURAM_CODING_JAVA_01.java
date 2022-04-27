@@ -49,3 +49,34 @@ public class Main
 	    }
 	}
 }
+
+
+// Print the numbers between 100 and 200 when they have 3 in them
+public class Main
+{
+	public static void main(String[] args) {
+	    int start = 100 , end = 200 , target = 3 ;
+	    
+	    for(int i = start ; i<=end ; i++ ){
+	        int temp = i;
+	        
+	        boolean found = false;
+	        
+	        while(temp>0){
+	            int digit = temp % 10;
+	            
+	            if(digit == target){
+        	         found = true;
+        	         break;
+	            }
+	            
+	            temp = temp / 10;
+	        }
+	        
+	        if(found){
+	            System.out.println(i);
+	        }
+	    }
+	    
+	}
+}
