@@ -19,3 +19,33 @@ public class Main
 		}
 	}
 }
+
+
+
+// find the index of a letter from a given string
+public class Main
+{
+	public static void main(String[] args) {
+	    String s = "hello world";
+	    
+	    char letter = 'w';
+	    
+	    char[] arr = s.toCharArray();
+	    
+	    int l = 0 , r = arr.length-1;
+	    
+	    while(l<r){
+	        if(arr[l]==letter){
+	            System.out.println(l);
+	        }
+	        
+	        l++;
+
+	        
+	        if(arr[r]==letter){
+	            System.out.println(r);
+	        }
+	        r--;
+	    }
+	}
+}
