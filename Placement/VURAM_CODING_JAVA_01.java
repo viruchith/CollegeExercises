@@ -222,3 +222,24 @@ public class Main
 	}
 }
 
+
+/*
+    reverse the string without using inbuilt function
+*/
+
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+        
+        String str = "We ate Apple";
+        
+        char[] arr = str.toCharArray();
+        
+        for(int i = arr.length-1 ; i >= 0 ; i--){
+            System.out.print(arr[i]);
+        }
+	}
+}
+
