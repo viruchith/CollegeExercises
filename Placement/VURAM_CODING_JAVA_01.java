@@ -263,3 +263,52 @@ public class Main
 		
 	}
 }
+
+
+/*
+    2.Given two arrays , print the common elements only one once
+    N={1,2,3,4}
+    N2={1,3,2,4,1,3,5,6}
+*/
+
+import java.util.*;
+
+public class Main
+{
+    public static void addNumbersFromArrayToSet(int[] arr,Set<Integer> set){
+        for(int num : arr){
+            set.add(num);
+        }
+    }
+    
+	public static void main(String[] args) {
+	    int[] arr1 = {1,2,3,4};
+	    
+	    int[] arr2 = {1,3,4,1,3,5,6};
+	    
+	    Set<Integer> set1 = new HashSet<>() , set2 = new HashSet<>();
+	    
+	    addNumbersFromArrayToSet(arr1,set1);
+	    
+	    addNumbersFromArrayToSet(arr2,set2);
+	    
+	    Set<Integer> longestSet, smallestSet;
+	    
+	    if(set1.size()>set2.size()){
+	        longestSet = set1;
+	        smallestSet = set2;
+	    }else{
+	        longestSet = set2;
+	        smallestSet = set1;
+	    }
+	    
+	    
+	    for(int i : smallestSet){
+	        if(longestSet.contains(i)){
+	            System.out.print(i+" ");
+	        }
+	    }
+	    
+	}
+}
+
