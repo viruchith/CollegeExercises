@@ -338,3 +338,28 @@ public class Main
 	}
 }
 
+
+/*
+  for a given string print the odd indexed characters first and even indexed characters second
+*/
+public class Main {
+
+    public static void main(String[] args) {
+        String str = "abcde";
+        
+        StringBuilder sb1 = new StringBuilder() ;
+        StringBuilder sb2 = new StringBuilder();
+
+        for(int i = 1 ; i<=str.length() ; i++){
+            if(i%2!=0){
+                sb1.append(str.charAt(i-1));
+            }else{
+                sb2.append(str.charAt(i-1));
+            }
+        }
+
+        System.out.println(sb1.toString()+sb2.toString());
+
+    }
+}
+
