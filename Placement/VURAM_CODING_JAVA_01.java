@@ -312,3 +312,26 @@ public class Main
 	}
 }
 
+
+/*
+  INPUT A123456B
+  OUTPUT A123B654
+*/
+public class Main
+{
+	public static void main(String[] args) {
+		String str = "A123456B";
+		char[] arr = str.toCharArray();
+		int  l = 4  , r = 7;
+		while(l<r){
+		    char temp = arr[l];
+		    arr[l] = arr[r];
+		    arr[r] = temp;
+		    l++;r--;
+		}
+		
+		for(char c : arr){
+		    System.out.print(c);
+		}
+	}
+}
