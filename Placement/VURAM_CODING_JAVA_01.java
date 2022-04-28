@@ -87,7 +87,7 @@ public class Main
 {
 	public static void main(String[] args) {
         
-        int[] arr = {5,3,8,1,4,8,3,9,0,2,4};
+        int[] arr = {5,3,8,1,4,1024,8,3,98,9,99,0,2,4};
         
         int max = Integer.MIN_VALUE;
         
@@ -97,6 +97,8 @@ public class Main
             if(arr[i]>max){
                 secmax = max;
                 max = arr[i];
+            }else if(arr[i] > secmax){
+                secmax = arr[i];
             }
         }
         
@@ -335,3 +337,4 @@ public class Main
 		}
 	}
 }
+
