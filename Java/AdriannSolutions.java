@@ -44,3 +44,31 @@ public class Main
 		System.out.println(Arrays.toString(arr));
 	}
 }
+
+// Write a function that checks whether an element occurs in a list.
+
+import java.util.*;
+
+
+public class Main
+{
+    public static boolean arrayContainsElement(int[] arr,int num){
+        int l = 0 , r = arr.length-1 ;
+        while(l<r){
+            if(arr[l] == num || arr[r] == num){
+                return true;
+            }
+            l++;r--;
+        }
+        
+        return false;
+    }
+    
+    
+	public static void main(String[] args) {
+		int[] arr = {1,2,3,4,5,6,7,8,9,10};
+		System.out.println(arrayContainsElement(arr,7));
+	}
+}
+
+//
