@@ -71,4 +71,25 @@ public class Main
 	}
 }
 
-//
+// Write a function that returns the elements on odd positions in a list.
+
+import java.util.*;
+
+public class Main
+{
+    // Generic
+    public static <T> List<T> getElementsAtOddPositions(List<T> list){
+        List<T> filteredList = new ArrayList<>();
+        for(int i = 0 ; i<list.size() ; i+=2){
+            filteredList.add(list.get(i));
+        }
+        
+        return filteredList;
+    }
+    
+	public static void main(String[] args) {
+	    List<Integer> numbersList = Arrays.asList(1,2,3,4,5,6,7,8,9);
+	    System.out.println(getElementsAtOddPositions(numbersList));
+	}
+}
+
