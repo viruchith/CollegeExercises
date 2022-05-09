@@ -93,3 +93,25 @@ public class Main
 	}
 }
 
+
+// Write a function that computes the running total of a list.
+
+import java.util.*;
+
+public class Main
+{
+    // Generic
+    public static int calculateRunningTotal(List <Integer> list){
+        int sum = 0;
+        for(int num : list){
+            sum += num;
+        }
+        return sum;
+    }
+    
+	public static void main(String[] args) {
+	    List<Integer> numbersList = Arrays.asList(1,2,3,4,5,6,7,8,9,10);
+	    System.out.println(calculateRunningTotal(numbersList));
+	}
+}
+
